@@ -1,0 +1,24 @@
+
+function now() { [native code] }: GET:/
+
+function now() { [native code] }: GET:/users
+
+1708665582275: GET:/
+
+1708665718634: GET:/
+
+1708665740273: GET:/users
+
+1708690925700: GET:/
+
+1708690932803: GET:/head
+
+1708690942750: GET:/head
+
+1708690971404: GET:/head
+
+1708691007459: GET:/head
+
+1708691013733: GET:/head
+
+1708691019551: GET:/head
