@@ -19,8 +19,18 @@ app.get('/api/users', (req, res)=>{
 })
 
 app.route('/api/users/:id').get((req, res)=>{
-    const id = Number(req.params.id)
+    const id = Number(req.params.id);
+    const user = users.find((user)=>user.id===id);
+    if(!user)return res.status(404).json({error: "user not found"});
+    return res.json(user);
+}).post((req, res)=>{
+    constbody = req.body;
+    users.push({...body, id: users.length +1})
+    fs.writeFile('./MOCK_DATA.json', JSON.stringify(users),
+    res.json({status: "success", id: users.length})
+    )
 })
+
 
 
 app.listen(8080);
