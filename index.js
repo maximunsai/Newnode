@@ -18,6 +18,10 @@ app.get('/api/users', (req, res)=>{
     return res.json(users);
 })
 
+app.get('/user1', (req, res )=>{
+    res.send("Added new get method");
+})
+
 app.route('/api/users/:id').get((req, res)=>{
     const id = Number(req.params.id);
     const user = users.find((user)=>user.id===id);
