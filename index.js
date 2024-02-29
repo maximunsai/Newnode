@@ -27,6 +27,9 @@ app.get('/user2', (req, res )=>{
 app.get('/user3', (req, res )=>{
     res.send("Added new get method3");
 })
+app.get('/user4', (req, res )=>{
+    res.send("Added new get method4");
+})
 
 app.route('/api/users/:id').get((req, res)=>{
     const id = Number(req.params.id);
