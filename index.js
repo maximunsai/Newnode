@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const fs = require('fs');
 const users = require('./MOCK_DATA.json');
-const port = 8080;
+const port = 8000;
 
 app.use(express.urlencoded({ extended: false}));
 
