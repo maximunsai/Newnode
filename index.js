@@ -15,8 +15,13 @@ app.get('/users', (req, res)=>{
 })
 
 app.get('/api/users', (req, res)=>{
+    console.log("Heyy")
     return res.json(users);
+    
 })
+
+//jUST CHECKING
+
 
 app.get('/user1', (req, res )=>{
     res.send("Added new get method");
